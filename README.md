@@ -7,7 +7,7 @@
 <meta name="description" content="I am an Atlassian Platform Specialist with 10 years of hands-on experience designing, implementing, and optimizing Jira ecosystems across enterprise environments.">
 <meta name="keywords" content="Atlassian Architect | Jira & JSM Expert (Cloud & DC) | Automation & Integrations | DevOps & ITSM | Process Specialist">
 <meta property="og:title" content="Prashanth Kothakonda | Platform/Linux Support Engineer">
-<meta property="og:description" content="around 12 years of experience in Linux, Cloud, DevOps & Automation">
+<meta property="og:description" content="around 10 years of experience in Jira, Confluence, Jira Service Mangement, ITSM, DevOps & Automation">
 <title>Prashanth Kothakonda | Jira Atlassian Lead </title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
 <style>
