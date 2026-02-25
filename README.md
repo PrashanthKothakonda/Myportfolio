@@ -8,7 +8,7 @@
 <meta name="keywords" content="Linux Engineer, Platform Engineer, DevOps, Kubernetes, Cloud Engineer">
 <meta property="og:title" content="Janakiram Suragani | Platform/Linux Support Engineer">
 <meta property="og:description" content="around 12 years of experience in Linux, Cloud, DevOps & Automation">
-<title>Janakiram Suragani | Platform/Linux Support Engineer</title>
+<title>Prashanth Kothakonda | Jira Atlassian Lead </title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
 <style>
 /* ===== BASE ===== */
