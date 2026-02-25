@@ -160,13 +160,40 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:3
   <p>
     I turn Jira and Confluence into powerful enterprise engines. With 10 years of hands-on experience, I design, implement, and optimize Atlassian ecosystems across Cloud and Data Center—on Linux, Windows, AWS, and Azure.
   </p>
-  <ul>
-    <li>I don’t just manage Jira — I architect scalable, automated  and ROVO AI solutions.</li>
-    <li>Expert in migrations, upgrades, integrations, and performance tuning.</li>
-    <li>Transforming Jira from a ticketing tool into a structured process powerhouse.</li>
-    <li>Supporting Agile, SAFe, and DevOps orgs with ITIL-aligned delivery efficiency.</li>
-    <li>Passionate about automation and building systems that reduce manual work.</li>
-  </ul>
+ <ul class="custom-bullets">
+  <li>I don’t just manage Jira — I architect scalable, automated solutions.</li>
+  <li>Expert in migrations, upgrades, integrations, and performance tuning.</li>
+  <li>Transforming Jira from a ticketing tool into a structured process powerhouse.</li>
+  <li>Supporting Agile, SAFe, and DevOps orgs with ITIL-aligned delivery efficiency.</li>
+  <li>Passionate about automation and building systems that reduce manual work.</li>
+</ul>
+
+<style>
+.custom-bullets {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+.custom-bullets li {
+  position: relative;
+  padding-left: 30px; /* space for icon */
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Use an image or icon as bullet */
+.custom-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px; /* icon width */
+  height: 20px; /* icon height */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/190/190411.png'); /* example icon URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+</style>
 </section>
       <div class="action-buttons">
         <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
