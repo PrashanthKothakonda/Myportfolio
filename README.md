@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="author" content="Janakiram Suragani">
+<meta name="author" content="Prashanth Kothakonda">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Platform/Linux Support Engineer with around 12 years of experience in Linux, Cloud, DevOps, and automation.">
-<meta name="keywords" content="Linux Engineer, Platform Engineer, DevOps, Kubernetes, Cloud Engineer">
-<meta property="og:title" content="Janakiram Suragani | Platform/Linux Support Engineer">
+<meta name="description" content="I am an Atlassian Platform Specialist with 10 years of hands-on experience designing, implementing, and optimizing Jira ecosystems across enterprise environments.">
+<meta name="keywords" content="Atlassian Architect | Jira & JSM Expert (Cloud & DC) | Automation & Integrations | DevOps & ITSM | Process Specialist">
+<meta property="og:title" content="Prashanth Kothakonda | Platform/Linux Support Engineer">
 <meta property="og:description" content="around 12 years of experience in Linux, Cloud, DevOps & Automation">
 <title>Prashanth Kothakonda | Jira Atlassian Lead </title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
@@ -372,7 +372,7 @@ footer p{margin-top:15px;font-size:0.95rem;color:#ccc;}
 
 <header>
   <div class="header-container">
-    <a class="logo" href="#home">Janakiram Suragani<span>.</span></a>
+    <a class="logo" href="#home">Prashanth Kothakonda<span>.</span></a>
     <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
     <nav id="main-nav">
       <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
@@ -393,9 +393,9 @@ footer p{margin-top:15px;font-size:0.95rem;color:#ccc;}
 <!-- HERO -->
 <section id="home" class="hero-section fade-in">
   <div class="section-container hero-container">
-    <img src="janakiram_suragani.JPG" class="profile-img" alt="Janakiram Suragani">
+    <img src="janakiram_suragani.JPG" class="profile-img" alt="Prashanth Kothakonda">
     <div class="hero-content">
-      <h1>Janakiram Suragani</h1>
+      <h1>Prashanth Kothakonda</h1>
       <div class="tagline">Platform/Linux Support Engineer </div>
       <p>Platform/Linux Support Engineer with around 12 years of experience delivering secure, highly available, and scalable infrastructure solutions. Extensive expertise in multi-cloud environments (G42, Azure, OCI), datacenter operations, and containerized platforms. Strong background in automation, monitoring, and DevOps practices to streamline operations and improve system reliability. Proven leader in 24/7 production support, ITIL processes, SOP development, and team guidance, with a passion for driving operational excellence through Linux, Cloud, and DevOps technologies.</p>
       <div class="action-buttons">
@@ -766,7 +766,7 @@ Supported VOIP infrastructure, provisioned servers, and maintained network opera
     <a href="mailto:suraganijanakiram@gmail.com"><i class="fas fa-envelope"></i> Email</a>
     <a href="tel:+971588531465"><i class="fas fa-phone"></i> Phone</a>
   </div>
-  <p>&copy; 2026 Janakiram Suragani — Platform/Linux Support Engineer. All rights reserved.</p>
+  <p>&copy; 2026 Prashanth Kothakonda — Platform/Linux Support Engineer. All rights reserved.</p>
   <a href="#home" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 </footer>
 
