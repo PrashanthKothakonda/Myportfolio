@@ -231,19 +231,69 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:3
 <section id="summary" class="fade-in">
   <div class="section-container">
     <h2>Professional Summary</h2>
-    <div class="box">
-      <ul>
-        <li>10 years managing Jira & Confluence across Cloud & Data Center.</li>
-        <li>Expert in workflows, permissions, fields, screens & automation.</li>
-        <li>Strong in REST API integrations, ScriptRunner, and advanced automation.</li>
-        <li>Experienced in Jira migrations (Cloud to Cloud, DC to Cloud).</li>
-        <li>Hands-on with Agile, Scrum, Kanban, SAFe & ITIL frameworks.</li>
-        <li>Integrated Jira with MS Teams, Slack, Salesforce, Zendesk, Freshdesk.</li>
-      </ul>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Years Icon">
+        <p>10 years managing Jira & Confluence across Cloud & Data Center</p>
+      </div>
+      <div class="summary-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Workflow Icon">
+        <p>Expert in workflows, permissions, fields, screens & automation</p>
+      </div>
+      <div class="summary-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="API Icon">
+        <p>Strong in REST API integrations, ScriptRunner, and advanced automation</p>
+      </div>
+      <div class="summary-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910760.png" alt="Migration Icon">
+        <p>Experienced in Jira migrations (Cloud to Cloud, DC to Cloud)</p>
+      </div>
+      <div class="summary-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Agile Icon">
+        <p>Hands-on with Agile, Scrum, Kanban, SAFe & ITIL frameworks</p>
+      </div>
+      <div class="summary-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Integration Icon">
+        <p>Integrated Jira with MS Teams, Slack, Salesforce, Zendesk, Freshdesk</p>
+      </div>
     </div>
   </div>
 </section>
 
+<style>
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.summary-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.summary-card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+</style>
 <!-- SKILLS -->
 <!-- SKILLS -->
 <section id="skills" class="fade-in">
@@ -313,24 +363,141 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:3
 <section id="experience" class="fade-in">
   <div class="section-container">
     <h2>Experience</h2>
-    <div class="box"><strong>O&M Specialist – Atlassian Stack</strong> | Tesnus Technology LLC – Core42, Abu Dhabi, UAE | 2023–Present</div>
-    <div class="box"><strong>Senior Software Engineer – Jira & Confluence</strong> | PropertyGuru Group, Singapore | 2019–2023</div>
-    <div class="box"><strong>Application Engineer – Jira & Confluence</strong> | OpenText Technologies, India | 2018–2019</div>
-    <div class="box"><strong>Atlassian Administrator</strong> | Addteq Software, India | 2015–2017</div>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Work Icon">
+        <h3>O&M Specialist – Atlassian Stack</h3>
+        <p>Tesnus Technology LLC – Core42, Abu Dhabi, UAE</p>
+        <p>2023–Present</p>
+      </div>
+      <div class="experience-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Work Icon">
+        <h3>Senior Software Engineer – Jira & Confluence</h3>
+        <p>PropertyGuru Group, Singapore</p>
+        <p>2019–2023</p>
+      </div>
+      <div class="experience-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Work Icon">
+        <h3>Application Engineer – Jira & Confluence</h3>
+        <p>OpenText Technologies, India</p>
+        <p>2018–2019</p>
+      </div>
+      <div class="experience-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Work Icon">
+        <h3>Atlassian Administrator</h3>
+        <p>Addteq Software, India</p>
+        <p>2015–2017</p>
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.experience-card {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.experience-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+</style>
 
 <!-- EDUCATION -->
 <section id="education" class="fade-in">
   <div class="section-container">
     <h2>Education</h2>
-    <div class="box">B.Tech – Computer Science | Kakatiya Institute of Technology & Science (2014) | First Division </div>
-    <div class="box">Intermediate - MPC | CV Raman Junior College (2010) | 93% </div>
-     <div class="box">SSC (2008)| VNHS | 80% </div>
-  
-
+    <div class="education-grid">
+      <div class="education-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="University Icon">
+        <h3>B.Tech – Computer Science</h3>
+        <p>Kakatiya Institute of Technology & Science (2014)</p>
+        <p>First Division</p>
+      </div>
+      <div class="education-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2972/2972140.png" alt="College Icon">
+        <h3>Intermediate – MPC</h3>
+        <p>CV Raman Junior College (2010)</p>
+        <p>93%</p>
+      </div>
+      <div class="education-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="School Icon">
+        <h3>SSC</h3>
+        <p>VNHS (2008)</p>
+        <p>80%</p>
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.education-card {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.education-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.education-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.education-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+</style>
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="fade-in">
