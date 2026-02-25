@@ -231,67 +231,64 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:3
 <section id="summary" class="fade-in">
   <div class="section-container">
     <h2>Professional Summary</h2>
-    <div class="summary-grid">
-      <div class="summary-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Years Icon">
-        <p>10 years managing Jira & Confluence across Cloud & Data Center</p>
-      </div>
-      <div class="summary-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Workflow Icon">
-        <p>Expert in workflows, permissions, fields, screens & automation</p>
-      </div>
-      <div class="summary-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="API Icon">
-        <p>Strong in REST API integrations, ScriptRunner, and advanced automation</p>
-      </div>
-      <div class="summary-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910760.png" alt="Migration Icon">
-        <p>Experienced in Jira migrations (Cloud to Cloud, DC to Cloud)</p>
-      </div>
-      <div class="summary-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Agile Icon">
-        <p>Hands-on with Agile, Scrum, Kanban, SAFe & ITIL frameworks</p>
-      </div>
-      <div class="summary-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Integration Icon">
-        <p>Integrated Jira with MS Teams, Slack, Salesforce, Zendesk, Freshdesk</p>
-      </div>
-    </div>
+    <ul class="summary-points">
+      <li>10 years managing Jira & Confluence across Cloud & Data Center.</li>
+      <li>Expert in workflows, permissions, fields, screens & automation.</li>
+      <li>Strong in REST API integrations, ScriptRunner, and advanced automation.</li>
+      <li>Experienced in Jira migrations (Cloud to Cloud, DC to Cloud).</li>
+      <li>Hands-on with Agile, Scrum, Kanban, SAFe & ITIL frameworks.</li>
+      <li>Integrated Jira with MS Teams, Slack, Salesforce, Zendesk, Freshdesk.</li>
+    </ul>
   </div>
 </section>
 
 <style>
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+.summary-points {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
 }
 
-.summary-card {
-  background: linear-gradient(135deg, #ff9a9e, #fecfef);
-  color: #333;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.summary-points li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: transform 0.2s;
 }
 
-.summary-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+/* animated gradient bullet */
+.summary-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  animation: pulse 1.2s infinite;
 }
 
-.summary-card img {
-  width: 40px;
-  margin-bottom: 10px;
+/* pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
 }
 
-.summary-card p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
+.summary-points li:hover {
+  transform: translateX(5px);
 }
 </style>
 <!-- SKILLS -->
@@ -503,14 +500,62 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:3
 <section id="certifications" class="fade-in">
   <div class="section-container">
     <h2>Certifications</h2>
-    <div class="box">
-      <ul>
-        <li>Atlassian Certified Jira Software Essentials</li>
-        <li>Atlassian Certified Professional</li>
-      </ul>
-    </div>
+    <ul class="certifications-list">
+      <li>Atlassian Certified Jira Software Essentials</li>
+      <li>Atlassian Certified Professional</li>
+    </ul>
   </div>
 </section>
+
+<style>
+.certifications-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.certifications-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: transform 0.2s;
+}
+
+/* animated gradient bullet */
+.certifications-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #42e695, #3bb2b8);
+  animation: pulse 1.2s infinite;
+}
+
+/* pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+}
+
+.certifications-list li:hover {
+  transform: translateX(5px);
+}
+</style>
 
 <!-- CONTACT -->
 <section id="contact" class="fade-in">
