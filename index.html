@@ -4,53 +4,145 @@
 <meta charset="UTF-8" />
 <meta name="author" content="Prashanth Kumar">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Atlassian Jira & Confluence Specialist with 8+ years of experience in Cloud & Data Center environments, automation, integrations, and ITIL frameworks.">
-<meta name="keywords" content="Atlassian Architect | Jira & JSM Expert | Confluence | Automation | DevOps | ITSM | Agile">
+<meta name="description" content="Prashanth Kumar – Atlassian Jira & Confluence Specialist with 8+ years in Jira, JSM, Confluence, Automation, Integrations, Cloud Platforms & ITIL frameworks.">
+<meta name="keywords" content="Atlassian, Jira Software, Jira Service Management, Confluence, Automation, DevOps, ITIL, Agile, Cloud, Linux, Python, REST API">
 <meta property="og:title" content="Prashanth Kumar | Atlassian Jira Specialist">
-<meta property="og:description" content="Experienced Atlassian Administrator specializing in Jira, JSM, Confluence, Automation, Integrations and Cloud Migrations.">
+<meta property="og:description" content="Experienced Atlassian Administrator specializing in Jira, JSM, Confluence, automation, integrations, and cloud migrations.">
+<meta property="og:image" content="yourphoto.jpg">
+<meta property="og:type" content="website">
 <title>Prashanth Kumar | Atlassian Jira Specialist</title>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- ===== KEEPING EXACT SAME STYLE FROM YOUR TEMPLATE ===== -->
 <style>
-
-/* KEEPING ALL YOUR ORIGINAL CSS EXACTLY SAME */
+/* ===== BASE ===== */
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;font-size:16px;}
 body{font-family:'Segoe UI',Tahoma,Verdana,sans-serif;background:#f8f9fa;color:#333;line-height:1.6;}
-header{background:#222;color:#fff;position:fixed;width:100%;top:0;z-index:1000;}
-.header-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
+
+/* ===== HEADER ===== */
+header{
+  background:#222;color:#fff;
+  position:fixed;width:100%;top:0;z-index:1000;
+  transition:box-shadow .3s ease, background .3s ease;
+}
+header.scrolled{box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.header-container{
+  max-width:1200px;margin:auto;
+  padding:15px 20px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+}
 .logo{font-size:1.8rem;font-weight:700;color:#fff;text-decoration:none}
 .logo span{color:#4CAF50}
-nav{display:flex;gap:10px;align-items:center;}
-.nav-link{color:#fff;text-decoration:none;padding:8px 14px;border-radius:4px;}
+nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+.nav-link,.cv-button{
+  color:#fff;text-decoration:none;
+  padding:8px 14px;border-radius:4px;
+  transition:.3s;position:relative;display:flex;align-items:center;
+  font-size:0.95rem;white-space:nowrap;
+}
 .nav-link:hover{background:rgba(255,255,255,.12)}
+.nav-link.active{color:#4CAF50}
+.nav-link::after{
+  content:"";position:absolute;left:50%;bottom:-5px;width:0;height:3px;
+  background:#4CAF50;transition:.3s ease;transform:translateX(-50%);border-radius:2px
+}
+.nav-link.active::after{width:60%}
+.cv-button{background:#4CAF50;font-weight:600;display:flex;align-items:center;font-size:0.95rem}
+.nav-link i, .cv-button i {margin-right:8px; color: #fff;}
+
+/* Hamburger menu */
+.nav-toggle {display: none;flex-direction: column;cursor: pointer;gap:5px;}
+.nav-toggle span {width:25px;height:3px;background:#fff;border-radius:2px;}
+
+/* scroll progress bar */
+#scroll-progress{position:fixed;top:0;left:0;height:4px;width:0%;background:linear-gradient(90deg,#4CAF50,#81C784);z-index:2000}
+
+/* ===== HERO ===== */
+.hero-section{
+  background:linear-gradient(135deg,#222,#444);
+  color:#fff;min-height:100vh;
+  display:flex;align-items:center;
+  padding-top:120px;
+  position:relative;
+}
+.hero-container{
+  display:flex;gap:50px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.profile-img{
+  width:280px;height:280px;
+  border-radius:50%;
+  border:5px solid #fff;
+  object-fit:cover;
+  flex-shrink:0;
+  box-shadow:0 12px 25px rgba(0,0,0,.3);
+}
+.hero-content{flex:1;}
+.hero-content h1{font-size:3rem;margin-bottom:10px;}
+.tagline{color:#4CAF50;font-size:1.7rem;margin-bottom:20px;}
+.hero-content p{margin-bottom:15px;font-size:1.05rem;line-height:1.6;}
+.action-buttons{margin-top:25px;display:flex;gap:15px;flex-wrap:wrap}
+.btn{
+  padding:14px 30px;border-radius:6px;text-decoration:none;font-weight:600;display:flex;align-items:center;
+  gap:8px;transition:.3s;cursor:pointer;
+}
+.btn i {color:#fff;}
+.btn-primary{background:#4CAF50;color:#fff;}
+.btn-primary:hover{background:#43A047;transform:translateY(-3px);}
+.hero-social{margin-top:25px;display:flex;gap:15px;flex-wrap:wrap}
+.hero-social a{
+  color:#fff;text-decoration:none;
+  padding:10px 16px;
+  background:rgba(255,255,255,.08);
+  border-radius:6px;
+  display:flex;align-items:center;
+  transition:0.3s;
+}
+.hero-social a:hover{background:rgba(255,255,255,.2);transform:translateY(-3px);}
+.hero-social a i{margin-right:8px;}
+
+/* ===== SECTIONS ===== */
 section{padding:80px 30px}
 .section-container{max-width:1200px;margin:auto}
-.hero-section{background:linear-gradient(135deg,#222,#444);color:#fff;min-height:100vh;display:flex;align-items:center;padding-top:120px;}
-.hero-container{display:flex;gap:50px;flex-wrap:wrap;align-items:center;}
-.profile-img{width:250px;height:250px;border-radius:50%;border:5px solid #fff;object-fit:cover;}
-.hero-content h1{font-size:3rem;margin-bottom:10px;}
-.tagline{color:#4CAF50;font-size:1.5rem;margin-bottom:20px;}
-.box{background:#fff;padding:20px 30px;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,.08);margin-bottom:25px;}
-h2{border-left:5px solid #222;padding-left:20px;font-size:2.2rem;margin-bottom:30px}
+h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:30px}
+.box{
+  background:#fff;padding:20px 30px;
+  border-radius:10px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  border-left:4px solid #2196F3;
+  margin-bottom:25px;
+  transition: transform .3s, box-shadow .3s;
+}
+.box:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,.15);}
+
+/* ===== COUNTERS ===== */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:30px;text-align:center;margin-top:30px;}
+.stat-card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,.08);transition:0.3s;}
+.stat-card h3{font-size:2rem;color:#4CAF50;margin-bottom:5px;}
+.stat-card p{font-size:1rem;color:#555;}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){.hero-container{flex-direction:column;align-items:center;text-align:center;}.profile-img{width:180px;height:180px;}}
 
 </style>
 </head>
 <body>
 
+<div id="scroll-progress"></div>
+
 <header>
   <div class="header-container">
     <a class="logo" href="#home">Prashanth Kumar<span>.</span></a>
-    <nav>
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#summary" class="nav-link">Summary</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#education" class="nav-link">Education</a>
-      <a href="#certifications" class="nav-link">Certifications</a>
-      <a href="#contact" class="nav-link">Contact</a>
+    <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    <nav id="main-nav">
+      <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+      <a href="#summary" class="nav-link"><i class="fas fa-user"></i> Summary</a>
+      <a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a>
+      <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
   </div>
 </header>
@@ -58,27 +150,39 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.2rem;margin-bottom:3
 <main>
 
 <!-- HERO -->
-<section id="home" class="hero-section">
+<section id="home" class="hero-section fade-in">
   <div class="section-container hero-container">
     <img src="yourphoto.jpg" class="profile-img" alt="Prashanth Kumar">
     <div class="hero-content">
       <h1>Prashanth Kumar</h1>
       <div class="tagline">Atlassian Jira & Confluence Specialist</div>
-      <p>Accomplished IT professional with extensive expertise in the Atlassian Suite, including Jira Software, Jira Service Management, Confluence, and Bitbucket. Strong in Agile methodologies, REST API integrations, scripting, migrations, ITIL frameworks, and cloud platforms.</p>
-      <p><i class="fas fa-envelope"></i> prashanthkp880@gmail.com</p>
-      <p><i class="fas fa-phone"></i> +971 565847448</p>
+      <p>8+ years managing Jira, JSM, Confluence, and Atlassian Suite integrations. Skilled in automation, REST APIs, cloud platforms, and ITIL frameworks.</p>
+      <div class="action-buttons">
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+        <a href="Prashanth_Resume.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Download CV</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/prashanthkumar" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/prashanthkumar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:prashanthkp880@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card"><h3 id="expYears">0</h3><p>Years Experience</p></div>
+        <div class="stat-card"><h3 id="projects">0</h3><p>Projects Delivered</p></div>
+        <div class="stat-card"><h3 id="clients">0</h3><p>Clients Served</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SUMMARY -->
-<section id="summary">
+<section id="summary" class="fade-in">
   <div class="section-container">
     <h2>Professional Summary</h2>
     <div class="box">
       <ul>
-        <li>8+ years managing Jira & Confluence across Cloud and Data Center.</li>
-        <li>Expert in Jira workflows, permissions, custom fields, screens & automations.</li>
+        <li>8+ years managing Jira & Confluence across Cloud & Data Center.</li>
+        <li>Expert in workflows, permissions, fields, screens & automation.</li>
         <li>Strong in REST API integrations, ScriptRunner, and advanced automation.</li>
         <li>Experienced in Jira migrations (Cloud to Cloud, DC to Cloud).</li>
         <li>Hands-on with Agile, Scrum, Kanban, SAFe & ITIL frameworks.</li>
@@ -89,74 +193,41 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.2rem;margin-bottom:3
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="fade-in">
   <div class="section-container">
     <h2>Technical Skills</h2>
     <div class="box">
-      <strong>Atlassian Tools:</strong> Jira Software, Jira Service Management, Confluence, Bitbucket, Bamboo, Trello<br><br>
-      <strong>Add-ons:</strong> ScriptRunner, Automation for Jira, JSU, Tempo, Xray, Zephyr Scale, Advanced Roadmaps, Draw.io, Time to SLA<br><br>
-      <strong>Infrastructure:</strong> Linux, AWS, Jenkins, Git, Azure DevOps, Python, REST API<br><br>
-      <strong>Monitoring:</strong> Zabbix, Power BI, EasyBI, Dashboard Hub, Rich Filter<br><br>
-      <strong>Integrations:</strong> MS Teams, Slack, SNOW, Zendesk, Freshdesk<br><br>
+      <strong>Atlassian Tools:</strong> Jira, JSM, Confluence, Bitbucket, Bamboo, Trello<br>
+      <strong>Add-ons:</strong> ScriptRunner, Automation for Jira, JSU, Tempo, Xray, Zephyr Scale, Draw.io, Time to SLA<br>
+      <strong>Infra & Dev Tools:</strong> Linux, Windows, AWS, Jenkins, Git, Azure DevOps, Python, REST API<br>
+      <strong>Monitoring:</strong> Zabbix, Power BI, EasyBI, Dashboard Hub<br>
+      <strong>Integrations:</strong> MS Teams, Slack, SNOW, Zendesk, Freshdesk<br>
       <strong>Frameworks:</strong> Agile, SAFe, ITIL
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="fade-in">
   <div class="section-container">
-    <h2>Work Experience</h2>
-
-    <div class="box">
-      <strong>O&M Specialist – Atlassian Stack</strong><br>
-      Tesnus Technology LLC – Core42 (UAE) | 2023 – Present
-      <ul>
-        <li>Configured Jira Software & JSM projects.</li>
-        <li>Implemented automated workflows & SLAs.</li>
-        <li>Built dashboards using EazyBI & Agile charts.</li>
-        <li>Integrated Jira with MS Teams, Power BI & Zendesk.</li>
-        <li>Managed CMDB & ITIL processes (Incident, Change, Problem).</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <strong>Senior Software Engineer – Jira & Confluence</strong><br>
-      PropertyGuru Group – Singapore | 2019 – 2023
-      <ul>
-        <li>Built complex workflows & automation rules.</li>
-        <li>Integrated Jira with Slack, Salesforce & Freshdesk.</li>
-        <li>Implemented SAML SSO & 2FA security.</li>
-        <li>Led outage management & RCA processes.</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <strong>Application Engineer – Jira & Confluence</strong><br>
-      OpenText Technologies – India | 2018 – 2019
-    </div>
-
-    <div class="box">
-      <strong>Atlassian Administrator</strong><br>
-      Addteq Software – India | 2015 – 2017
-    </div>
-
+    <h2>Experience</h2>
+    <div class="box"><strong>O&M Specialist – Atlassian Stack</strong> | Tesnus Technology LLC – Core42, Abu Dhabi, UAE | 2023–Present</div>
+    <div class="box"><strong>Senior Software Engineer – Jira & Confluence</strong> | PropertyGuru Group, Singapore | 2019–2023</div>
+    <div class="box"><strong>Application Engineer – Jira & Confluence</strong> | OpenText Technologies, India | 2018–2019</div>
+    <div class="box"><strong>Atlassian Administrator</strong> | Addteq Software, India | 2015–2017</div>
   </div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education">
+<section id="education" class="fade-in">
   <div class="section-container">
     <h2>Education</h2>
-    <div class="box">
-      <strong>B.Tech – Computer Science</strong><br>
-      Kakatiya Institute of Technology & Science (2014)
-    </div>
+    <div class="box">B.Tech – Computer Science | Kakatiya Institute of Technology & Science (2014)</div>
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-<section id="certifications">
+<section id="certifications" class="fade-in">
   <div class="section-container">
     <h2>Certifications</h2>
     <div class="box">
@@ -169,13 +240,13 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.2rem;margin-bottom:3
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="fade-in">
   <div class="section-container">
     <h2>Contact</h2>
     <div class="box">
       <p>Email: prashanthkp880@gmail.com</p>
       <p>Phone: +971 565847448</p>
-      <p>LinkedIn: (Add your profile link)</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/prashanthkumar" target="_blank">Profile</a></p>
     </div>
   </div>
 </section>
@@ -185,6 +256,49 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.2rem;margin-bottom:3
 <footer style="background:#222;color:#fff;text-align:center;padding:20px;">
   © 2026 Prashanth Kumar — Atlassian Specialist
 </footer>
+
+<script>
+// SCROLL PROGRESS & ACTIVE NAV
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+const progress = document.getElementById('scroll-progress');
+const header = document.querySelector('header');
+window.addEventListener('scroll',()=>{
+  let scrollY = window.scrollY;
+  header.classList.toggle('scrolled', scrollY>20);
+  progress.style.width = (scrollY/(document.body.scrollHeight-window.innerHeight)*100)+'%';
+  sections.forEach(sec=>{
+    let top = sec.offsetTop-120;
+    let bottom = top+sec.offsetHeight;
+    let id = sec.getAttribute('id');
+    if(scrollY>=top && scrollY<bottom){
+      navLinks.forEach(l=>l.classList.remove('active'));
+      const activeLink=document.querySelector(`.nav-link[href="#${id}"]`);
+      if(activeLink) activeLink.classList.add('active');
+    }
+  });
+});
+
+// ANIMATED COUNTERS
+function animateValue(id,start,end,duration){
+  let obj=document.getElementById(id);
+  let range=end-start;
+  let current=start;
+  let increment=end>start?1:-1;
+  let stepTime=Math.abs(Math.floor(duration/range));
+  let timer=setInterval(()=>{
+    current+=increment;
+    obj.textContent=current;
+    if(current==end){clearInterval(timer);}
+  },stepTime);
+}
+window.addEventListener('load',()=>{
+  animateValue('expYears',0,8,1500);
+  animateValue('projects',0,42,1500);
+  animateValue('clients',0,15,1500);
+});
+
+</script>
 
 </body>
 </html>
