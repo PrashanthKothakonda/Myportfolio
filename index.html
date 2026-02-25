@@ -348,15 +348,75 @@ h2{border-left:5px solid #222;padding-left:20px;font-size:2.4rem;margin-bottom:3
 <!-- CONTACT -->
 <section id="contact" class="fade-in">
   <div class="section-container">
-    <h2>Contact</h2>
-    <div class="box">
-      <p>Email: prashanthkp880@gmail.com</p>
-      <p>Phone: +971 565847448</p>
-       <p>Phone: +91 7780527434</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/prashanth-k-ba4454147">Profile</a></p>
+    <h2>Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+        <p>Email</p>
+        <a href="mailto:prashanthkp880@gmail.com">prashanthkp880@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon">
+        <p>UAE Phone</p>
+        <a href="tel:+971565847448">+971 565847448</a>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon">
+        <p>India Phone</p>
+        <a href="tel:+917780527434">+91 7780527434</a>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+        <p>LinkedIn</p>
+        <a href="https://www.linkedin.com/in/prashanth-k-ba4454147" target="_blank">View Profile</a>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-card a {
+  color: #fff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+</style>
 
 </main>
 
